@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Colchones</title>
+  <style>
+    :root {
+      --verde-oscuro: #2e7d32;
+      --verde-medio: #4caf50;
+      --verde-claro: #c8e6c9;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: var(--verde-claro);
+    }
+
+    header {
+      background-color: var(--verde-oscuro);
+      color: white;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 60px;
+      height: auto;
+    }
+
+    header .titulo {
+      text-align: center;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      padding: 2em;
+    }
+
+    .colchon {
+      background-color: white;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .colchon:hover {
+      transform: scale(1.03);
+    }
+
+    .colchon img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .nombre {
+      font-weight: bold;
+      margin-top: 0.5em;
+      color: var(--verde-oscuro);
+    }
+
+    .precio {
+      color: var(--verde-medio);
+      font-size: 1.1em;
+      margin-top: 0.3em;
+    }
+
+    .descripcion {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    footer {
+      background-color: var(--verde-oscuro);
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+   <img src="https://imgur.com/to7xdT1" alt="Logo de la tienda" />
+    <div class="titulo">
+      <h1>Catálogo de Colchones Eco sueño</h1>
+      <h3>Camas y colchones dos plazas y king</h3>
+    </div>
+  </header>
+
+  <main class="catalogo">
+    <div class="colchon">
+      <img src="https://via.placeholder.com/300x200" alt="Colchón Premium" />
+      <div class="nombre">Colchón dos plazas</div>
+      <div class="precio">$199.990</div>
+      <div class="descripcion">Espuma de alta densidad, ideal para columna y descanso profundo.</div>
+    </div>
+
+    <div class="colchon">
+      <img src="https://via.placeholder.com/300x200" alt="Colchón Ortopédico" />
+      <div class="nombre">Cama king</div>
+      <div class="precio">$249.990</div>
+      <div class="descripcion">Cama king conpleta base conchol acompañada de un repaldo</div>
+    </div>
+
+    <div class="colchon">
+      <img src="https://imgur.com/fxAKnAZ" alt="Colchón Viscoelástico" />
+      <div class="nombre">Colchón doz plazas con base europea</div>
+      <div class="precio">$299.990</div>
+      <div class="descripcion">Tecnología memory foam que se adapta al cuerpo.</div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Tienda de camas y colchones| Todos los derechos reservados
+  </footer>
+</body>
+</html>
